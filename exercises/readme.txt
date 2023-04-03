@@ -1,1 +1,1 @@
-DMM WEBCAMPの学習コンテンツのまとめです
+DMM WEBCAMPの学習・演習のまとめです
