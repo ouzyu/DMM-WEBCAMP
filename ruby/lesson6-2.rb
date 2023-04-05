@@ -3,7 +3,11 @@ puts "何回計算を繰り返しますか？"
 
 count = gets.to_i
 
-for i in 1..count do
+i = 1
+# for i in 1..count do
+# 変数iを定義せずにfor文で繰り返し処理を行った
+
+while i <= count do
   puts "#{i}回目の計算"
   puts "2つの値を入力してください"
   a = gets.to_i
@@ -15,6 +19,8 @@ for i in 1..count do
   puts "#{a}-#{b}=#{a - b}"
   puts "#{a}*#{b}=#{a * b}"
   puts "#{a}/#{b}=#{a / b}"
+  
+  i += 1
 end
 
 puts "計算を終了します"
