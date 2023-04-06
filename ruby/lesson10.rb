@@ -8,4 +8,4 @@ class Taxi < Car
 end
 
 taxi = Taxi.new
-taxi.run(10)
+taxi.run(5)
