@@ -29,5 +29,5 @@ class Car
   end
 end
 
-Car.run(5)
+Car.run(10)
 Car.turn("右")
