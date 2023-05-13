@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  background-color: #EC715F;
+  height: 70px;
+  color: #FAFAFA;
+}
+
+.menu-bar {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 70px;
+}
+
+.main-visual img {
+  height: 650px;
+  width: 100%;
+}
+
+.img-box img {
+  width: 300px;
+  height: 250px;
+}
+
+footer {
+  background-color: #EC715F;
+  height: 60px;
+  color: #FAFAFA;
+}
