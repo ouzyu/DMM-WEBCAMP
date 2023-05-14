@@ -4,14 +4,16 @@
   box-sizing: border-box;
 }
 
+/*ヘッダー*/
 
 header {
   background-color: #EC715F;
   height: 70px;
-  color: #FAFAFA;
 }
 
 .menu-bar {
+  display: flex;
+  justify-content: space-between;
   max-width: 1024px;
   margin: 0 auto;
 }
@@ -20,9 +22,81 @@ header {
   height: 70px;
 }
 
-.main-visual img {
+.nav {
+  display: flex;
+}
+
+.nav-list {
+  list-style: none;
+  line-height: 70px;
+  padding: 0 30px;
+  font-size: 16px;
+  color: #FAFAFA;
+}
+
+/*メイン共通*/
+
+section {
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  padding-top: 90px;
+  margin-bottom: 8px;
+  font-size: 32px;
+  color: #000000;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 8px auto 0;
+  background-color: #EC715F;
+}
+
+/*メインビジュアル*/
+
+#main-visual {
+  width: 100%;
+  height: 650px;
+  text-align: center;
+  background-image: url(img/mv.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.main-visual {
   height: 650px;
   width: 100%;
+}
+
+h1 {
+  padding-top: 200px;
+  font-size: 64px;
+  color: #FAFAFA;
+}
+
+#main-visual p {
+  padding-top: 10px;
+  font-size: 20px;
+  color: #FAFAFA;
+}
+
+/*ポートフォリオ*/
+
+#portfolio {
+  background-color: #ECEFF1;
+  padding-bottom: 90px;
+}
+
+.img-box {
+  width: 920px;
+  display: flex;
+  flex-flow:row wrap;
+  margin: 0px auto;
 }
 
 .img-box img {
@@ -30,8 +104,83 @@ header {
   height: 250px;
 }
 
+/*フィーチャー*/
+
+#feature {
+  width: 980px;
+}
+
+.feature-container {
+  display: flex;
+  margin: 30px 0 90px;
+}
+
+.feature-content {
+  width: 320px;
+}
+
+.feature-icon {
+  font-size: 60px;
+  text-align: center;
+}
+
+.feature-h3 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/*プロファイル*/
+
+#profile {
+  background-color: #ECEFF1;
+  padding-bottom: 90px;
+}
+
+.profile-content {
+  width: 1024px;
+  display: flex;
+  margin: 30px auto;
+}
+
+.profile-left,.profile-right {
+  width: 512px;
+}
+
+.profile-right {
+  text-align: left;
+}
+
+/*コンタクト*/
+
+#contact {
+  padding-bottom: 90px;
+}
+
+.contact-container {
+  width: 800px;
+  margin: 30px auto;
+  display: flex;
+}
+
+.contact-left, .contact-right {
+  width: 400px;
+}
+
+.sns-list {
+  display: flex;
+}
+
+.sns-icon {
+  font-size: 50px;
+  display: flex;
+}
+
+/*フッター*/
+
 footer {
   background-color: #EC715F;
   height: 60px;
   color: #FAFAFA;
+  text-align: center;
+  line-height: 60px;
 }
