@@ -40,8 +40,9 @@ header {
 
 /*メイン共通*/
 
-section {
+.container {
   margin: 0 auto;
+  width: 1024px;
   text-align: center;
 }
 
@@ -192,7 +193,7 @@ h1 {
 }
 
 .profile-left,.profile-right {
-  width: 512px;
+  width: 50%;
 }
 
 .my-icon {
@@ -232,16 +233,16 @@ h1 {
   margin: 0 auto;
   padding-top: 30px;
   display: flex;
+  text-align: center;
 }
 
 .contact-left, .contact-right {
-  width: 400px;
+  width: 50%;
 }
 
 .contact-right-content,.contact-left-content {
   width: 200px;
   margin: 0 auto;
-  text-align: left;
 }
 
 .contact-heading {
@@ -265,4 +266,105 @@ footer {
   color: #FAFAFA;
   text-align: center;
   line-height: 60px;
+}
+
+/*レスポンシブ*/
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+
+  header {
+    height: 50px;
+  }
+
+  .logo {
+    height: 50px
+  }
+  .menu-bar {
+    width: 90%;
+  }
+
+  .menu-box {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #FAFAFA;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+  }
+
+  .box-bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    background-color: #FAFAFA;
+  }
+
+  .box-bar:first-child {
+    margin-top: 10px;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  #main-visual {
+    background-image: url(img/code.png);
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .img-box {
+    width: 300px;
+  }
+
+  .img {
+    margin-right: 0;
+  }
+
+  .no-img {
+    display: none;
+  }
+
+  .feature-container {
+    width: 320px;
+    flex-flow:row wrap;
+  }
+
+  .profile-content {
+    flex-flow:row wrap;
+    width: 100%;
+  }
+
+  .profile-left {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .profile-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-container {
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+  .contact-left, .contact-right {
+    width: 100%;
+  }
+
+  .contact-left-content, .contact-right-content {
+    width: 100%;
+  }
+
+  .contact-right-content {
+    margin-top: 20px;
+  }
 }
